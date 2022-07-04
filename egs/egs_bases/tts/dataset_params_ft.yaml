@@ -41,7 +41,7 @@ binarization_args:
   with_align: true
   with_spk_embed: false
   with_f0: true
-  with_f0cwt: false
+  with_f0cwt: true
   with_linear: false
   trim_eos_bos: false
   min_sil_duration: 0.1
