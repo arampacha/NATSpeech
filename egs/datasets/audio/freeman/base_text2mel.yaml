@@ -1,0 +1,13 @@
+base_config: egs/egs_bases/tts/base.yaml
+raw_data_dir: 'data/freeman_v2'
+processed_data_dir: 'data/processed/freeman'
+binary_data_dir: 'data/binary/freeman'
+preprocess_cls: egs.datasets.audio.freeman.preprocess.FreemanAngryPreprocess
+binarization_args:
+  train_range: [ 0, 378 ]
+  test_range: [ 378, -1 ]
+  valid_range: [ 378, -1 ]
+test_ids: [380, 381, 382, 383, 384, 385, 386, 387, 388, 389]
+f0_min: 80
+f0_max: 600
+vocoder_ckpt: checkpoints/hifi_lj
