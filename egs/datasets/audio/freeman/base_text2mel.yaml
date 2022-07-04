@@ -1,4 +1,4 @@
-base_config: egs/egs_bases/tts/base.yaml
+base_config: egs/egs_bases/tts/finetune.yaml
 raw_data_dir: '/home/data/freeman_v2'
 processed_data_dir: 'data/processed/freeman'
 binary_data_dir: 'data/binary/freeman'
