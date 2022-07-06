@@ -1,7 +1,7 @@
 base_config: egs/egs_bases/tts/finetune.yaml
-raw_data_dir: '/home/data/freeman_v2'
+raw_data_dir: '/content/freeman_v2'
 processed_data_dir: 'data/processed/freeman'
-binary_data_dir: 'data/binary/freeman'
+binary_data_dir: 'data/binary/freeman_cwt'
 preprocess_cls: egs.datasets.audio.freeman.preprocess.FreemanAngryPreprocess
 binarization_args:
   train_range: [ 0, 378 ]
