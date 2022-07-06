@@ -11,7 +11,7 @@ min_frames: 0
 max_frames: 1548
 frames_multiple: 1
 max_input_tokens: 1550
-ds_workers: 1
+ds_workers: 2
 
 #########
 # model
