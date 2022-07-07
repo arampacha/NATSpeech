@@ -53,6 +53,8 @@ class FastSpeech2OrigTask(FastSpeechTask):
     def build_tts_model(self):
         dict_size = len(self.token_encoder)
         self.model = FastSpeech2Orig(dict_size, hparams)
+        for p in self.model.encoder.parameters():
+            p.requires_grad = False
 
     def run_model(self, sample, infer=False, *args, **kwargs):
         txt_tokens = sample['txt_tokens']  # [B, T_t]
